@@ -1,0 +1,86 @@
+{
+	"contracts": {
+		"EsusuChain": {
+			"source": "cadence/contracts/EsusuChain.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"EsusuChainTransactionHandler": {
+			"source": "cadence/contracts/EsusuChainTransactionHandler.cdc",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testing": "0000000000000007"
+			}
+		},
+		"FlowToken": {
+			"source": "https://github.com/onflow/flow-core-contracts/blob/master/contracts/FlowToken.cdc",
+			"aliases": {
+				"emulator": "0ae53cb6e3f42a79",
+				"mainnet": "1654653399040a61",
+				"testnet": "7e60df042a9c0868",
+				"testing": "0000000000000003"
+			}
+		},
+		"FlowTransactionScheduler": {
+			"source": "testnet://8c5303eaa26202d6.FlowTransactionScheduler",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testnet": "8c5303eaa26202d6"
+			}
+		},
+		"FlowTransactionSchedulerUtils": {
+			"source": "testnet://8c5303eaa26202d6.FlowTransactionSchedulerUtils",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"testnet": "8c5303eaa26202d6"
+			}
+		},
+		"FungibleToken": {
+			"source": "https://github.com/onflow/flow-ft/blob/master/contracts/FungibleToken.cdc",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7",
+				"testing": "0000000000000002"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000",
+		"testing": "127.0.0.1:3569"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "emulator-account.pkey"
+			}
+		},
+		"testnet-account": {
+			"address": "0xa89655a0f8e3d113",
+			"key": {
+				"type": "file",
+				"location": "testnet-account.pkey"
+			}
+		}
+	},
+	"deployments": {
+		"emulator": {
+			"emulator-account": [
+				"EsusuChain",
+				"EsusuChainTransactionHandler"
+			]
+		},
+		"testnet": {
+			"testnet-account": [
+				"EsusuChain",
+				"EsusuChainTransactionHandler"
+			]
+		}
+	}
+}

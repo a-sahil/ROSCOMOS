@@ -1,0 +1,18 @@
+{
+  "name": "roscomos-relayer",
+  "version": "1.0.0",
+  "description": "ROSCOMOS Gas Relayer — pays transaction fees on behalf of users (sponsored gas)",
+  "type": "module",
+  "main": "relayer.js",
+  "scripts": {
+    "start": "node relayer.js",
+    "dev": "node --watch relayer.js"
+  },
+  "dependencies": {
+    "@onflow/fcl": "^1.20.2",
+    "cors": "^2.8.5",
+    "elliptic": "^6.5.7",
+    "express": "^4.21.2",
+    "sha3": "^2.1.4"
+  }
+}

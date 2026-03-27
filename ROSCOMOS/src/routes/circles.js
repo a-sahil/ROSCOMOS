@@ -1,0 +1,10 @@
+﻿const express = require("express");
+const r = express.Router();
+const { authenticate } = require("../middleware/auth");
+const { validateBody } = require("../middleware/validate");
+const { createCircleSchema } = require("../validators/circleValidator");
+const cc = require("../controllers/circleController");
+r.post("/", authenticate, validateBody(createCircleSchema), cc.createCircle);
+r.get("/", cc.listCircles);
+r.get("/:circleId", cc.getCircle);
+module.exports = r;

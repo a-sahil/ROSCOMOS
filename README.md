@@ -61,20 +61,6 @@ Vercel link: https://roscomos.vercel.app/
 └─────────────────────────────────────────────────────────────┘
 ```
 
-```
-📢 Social Media Post
-
-We've officially launched ROSCOMOS on the Flow blockchain — a decentralized platform bringing African-style rotating savings groups (ROSCA) to Web3!
-Join the revolution of community savings powered by Flow. 💸🌍
-
-👉 Try it here: https://roscomos.vercel.app
-
-🔗 Contract: 0xa89655a0f8e3d113 (Flow Testnet)
-#FlowBlockchain #ROSCOMOS #Web3Savings #FlowHackathon @flow_blockchain
-
-📍 Posted on X (Twitter): https://x.com/0xDanny__/status/1984279590085546115
-```
-
 ## Project Structure
 
 ```
